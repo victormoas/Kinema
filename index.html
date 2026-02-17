@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinema | Motion Intelligence for Surgery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #050505; color: #ffffff; }
+        .yc-orange { color: #FF5100; }
+        .bg-yc-orange { background-color: #FF5100; }
+        .glow { box-shadow: 0 0 20px rgba(255, 81, 0, 0.2); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+        <div class="text-2xl font-bold tracking-tighter uppercase">Kinema</div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
+            <a href="#" class="hover:text-white transition">Technology</a>
+            <a href="#" class="hover:text-white transition">Data Licensing</a>
+            <a href="#" class="hover:text-white transition">Research</a>
+        </div>
+        <button class="border border-white px-5 py-2 text-sm font-semibold hover:bg-white hover:text-black transition">Login</button>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-8 pt-20 pb-32 text-center md:text-left">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight mb-6">
+                    The foundation of <span class="yc-orange">autonomous</span> surgery.
+                </h1>
+                <p class="text-xl text-gray-400 mb-10 max-w-lg">
+                    We convert head-mounted stereo footage into high-fidelity 6D kinematic data. Training the next generation of surgeons—and the robots that follow.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <button class="bg-yc-orange text-white px-8 py-4 rounded-sm font-bold glow hover:opacity-90 transition">Request Early Access</button>
+                    <button class="bg-transparent border border-gray-700 text-white px-8 py-4 rounded-sm font-bold hover:bg-gray-900 transition">View the Dataset</button>
+                </div>
+            </div>
+            
+            <div class="relative bg-gray-900 aspect-video rounded-lg border border-gray-800 flex items-center justify-center overflow-hidden">
+                <div class="absolute inset-0 opacity-30 bg-[radial-gradient(#FF5100_1px,transparent_1px)] [background-size:20px_20px]"></div>
+                <div class="z-10 text-center">
+                    <div class="text-xs font-mono text-yc-orange mb-2">[ 6D_POSE_ESTIMATION_ACTIVE ]</div>
+                    <div class="w-48 h-1 bg-gray-800 rounded-full overflow-hidden">
+                        <div class="bg-yc-orange h-full w-2/3 animate-pulse"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="border-y border-gray-900 bg-black/50 py-24">
+        <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-3 gap-16">
+            <div>
+                <h3 class="text-yc-orange font-mono text-sm mb-4">01. FOR RESIDENTS</h3>
+                <h4 class="text-xl font-bold mb-3">Objective Benchmarking</h4>
+                <p class="text-gray-500">Economy of motion, spaghetti maps, and peer-percentile metrics delivered via mobile app.</p>
+            </div>
+            <div>
+                <h3 class="text-yc-orange font-mono text-sm mb-4">02. FOR HOSPITALS</h3>
+                <h4 class="text-xl font-bold mb-3">Risk Intelligence</h4>
+                <p class="text-gray-500">Automated surgical "black box" reporting to reduce never-events and insurance liability.</p>
+            </div>
+            <div>
+                <h3 class="text-yc-orange font-mono text-sm mb-4">03. FOR ROBOTICS</h3>
+                <h4 class="text-xl font-bold mb-3">Foundation Models</h4>
+                <p class="text-gray-500">The world's largest library of 6D expert human trajectories for imitation learning.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 px-8 text-center text-gray-600 text-xs uppercase tracking-widest">
+        © 2026 Kinema Technologies. Built for the future of surgery.
+    </footer>
+
+</body>
+</html>
